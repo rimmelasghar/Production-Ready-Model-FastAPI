@@ -2,12 +2,16 @@
 
 # Deploy ML models with FastAPI, Docker, and Google Cloud Run
 
+
 ### 1. Develop and save the model with this Colab
 
 [Open Colab](https://colab.research.google.com/drive/1uaALcaatvxOu42IhQA4r0bahfdpw-Z7v?usp=sharing)
 
 ### 2. Create Docker container
-
+create a ```.env.production``` file in the directory
+```bash
+APP_NAME='App name'
+```
 create a container by executing the following command.
 ```bash
 docker compose -f "docker-compose.production.yaml" up --build
@@ -21,7 +25,7 @@ The application will be available at http://0.0.0.0:8000/app/docs/
 
 login or signup to [docker hub](https://hub.docker.com/) and create a empty repository.
 
-<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/dockerhub-repository.jpg" alt="creating a repository on docker hub" width="250" height="250">
+<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/dockerhub-repository.jpg" alt="creating a repository on docker hub" width="1000" height="400">
 
 ### 4. Build a Docker Image and Push it to Docker Hub.
 
@@ -42,7 +46,7 @@ The command docker push rimmelasghar4/model-deployment-fastapi:1.0.0 is used to 
 ### 5. Create a Service on Cloud Run (GCP):
 head over to [GCP cloud run](https://console.cloud.google.com/run) and create a service.
 
-<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-interface.jpg" alt="creating a service on cloud run" width="250" height="250">
+<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-interface.jpg" alt="creating a service on cloud run" width="1000" height="400">
 
 see this tutorial on how to create a service on google cloud run 
 [here](https://www.cyberithub.com/how-to-create-service-in-google-cloud-run-using-6-easy-steps/)
@@ -58,8 +62,8 @@ some changes to do while creating a service
 wallah, you've successfully deployed a ml model on cloud run:
 
 
-<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-created.jpg" alt="creating a service on cloud run" width="250" height="250">
+<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-created.jpg" alt="creating a service on cloud run" width="1000" height="400">
 
 head over to the url
 
-<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-deployed.jpg" alt="creating a service on cloud run" width="250" height="250">
+<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-deployed.jpg" alt="creating a service on cloud run" width="1000" height="400">
