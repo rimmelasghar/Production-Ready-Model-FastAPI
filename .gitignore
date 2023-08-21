@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+dist/
+build/
+eggs/
+*.egg-info/
+.svn/
+
+# Project-specific settings
+*.env
+*.env.*
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swo
+*.swp
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Miscellaneous
+*.log
+*.pyc
+*.bak

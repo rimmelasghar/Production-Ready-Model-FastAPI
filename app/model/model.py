@@ -1,24 +1,25 @@
 import pickle
+import re
 from pathlib import Path
-import sklearn
+import pandas as pd
 
-__version__ = "0.2.0"
+__version__ = "0.1.0"
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent
 
-#model File.
-file = open(f"{BASE_DIR}/trained_model-{__version__}.pkl","rb")
 
-#Count Vectorizer File.
-file2 = open(f"{BASE_DIR}/transform-{__version__}.pkl","rb")
+with open(f"{BASE_DIR}/xgboost_model_pipeline-{__version__}.pkl", "rb") as file:
+    model = pickle.load(file)
 
-model = pickle.load(file)
-cv = pickle.load(file2)
+# classifcation classes
+classes = [
+    "Iris-setosa",
+    "Iris-versicolor",
+    "Iris-virginica",
+]
 
 
-# Function to predict the input.
-
-def predict_pipeline(text):
-    data = cv.transform([text]).toarray()
-    output = model.predict(data)
-    return output[0]
+def predict_pipeline(data):
+    single_df = pd.DataFrame([data.dict()])
+    single_pred = model.predict(single_df)
+    return classes[single_pred[0]]
