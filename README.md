@@ -12,7 +12,6 @@ create a container by executing the following command.
 ```bash
 docker compose -f "docker-compose.production.yaml" up --build
 docker compose -f "docker-compose.production.yaml" up
-doc
 ```
 
 The application will be available at http://0.0.0.0:8000/app/docs/
