@@ -16,7 +16,6 @@ create a container by executing the following command.
 ```bash
 docker compose -f "docker-compose.production.yaml" up --build
 docker compose -f "docker-compose.production.yaml" up
-doc
 ```
 
 The application will be available at http://0.0.0.0:8000/app/docs/
@@ -62,8 +61,16 @@ some changes to do while creating a service
 wallah, you've successfully deployed a ml model on cloud run:
 
 
+<<<<<<< HEAD
 <img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-created.jpg" alt="creating a service on cloud run" width="1000" height="400">
 
 head over to the url
 
 <img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-deployed.jpg" alt="creating a service on cloud run" width="1000" height="400">
+=======
+<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-created.jpg" alt="creating a service on cloud run" width="1000" height="100">
+
+head over to the url
+
+<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-deployed.jpg" alt="creating a service on cloud run" width="1000" height="400">
+>>>>>>> fc6b254c3d04ed75d023112066facffb49885e9f
