@@ -60,12 +60,6 @@ some changes to do while creating a service
 
 wallah, you've just successfully deployed a mmachine learning model on cloud run:
 
-<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-created.jpg" alt="creating a service on cloud run" width="1000" height="400">
-
-head over to the url
-
-<img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-deployed.jpg" alt="creating a service on cloud run" width="1000" height="400">
-
 <img src="https://github.com/rimmelasghar/Deploy-ML-FastAPI/blob/main/img/cloud-run-created.jpg" alt="creating a service on cloud run" width="1000" height="100">
 
 head over to the url
